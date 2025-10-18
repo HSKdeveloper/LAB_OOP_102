@@ -8,3 +8,12 @@ print(f"current amount of balance account is: {customer1.get_balance()}")
 
 customer1.withdraw(5)
 print(f"current amount of balance account is: {customer1.get_balance()}")
+
+try:
+    customer1.withdraw(16)
+except Exception as e:
+    print(e)
+finally:
+    print("Exception Done")
+
+print("Here is the end of program, have a good day")

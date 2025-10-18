@@ -17,7 +17,7 @@ class BankAccount:
         if self.initial_balance >= amount:
             self.initial_balance -= amount
             return self.initial_balance
-        else: raise ValueError ("the balance amount is not enugh.")
+        else: raise Exception ("the balance amount is not enugh.")
 
     #return current initial balance acount
     def get_balance(self):
